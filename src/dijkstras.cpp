@@ -45,8 +45,8 @@ vector<int> extract_shortest_path(const vector<int>& distances, const vector<int
 }
 
 void print_path(const vector<int>& v, int total) {
-    if (v.empty()) {
-        cout << "no path" << endl;
+    if (total == INF) {
+        cout << "infinite total" << endl;
         return;
     }
 
